@@ -15,7 +15,7 @@ module.exports = function toReadable(num) {
     return (hundreds[Number(numStr[0])] + fromOneToNineteen[Number(numStr.slice(1, 3))]).trim()
   } else if(num % 100 === 0){
     return hundreds[Number(numStr[0])].trim()
-  } else if(numStr.length === 3){
+  } else{
     return (hundreds[Number(numStr[0])] + dec[Number(numStr[1])] + fromOneToNineteen[Number(numStr[2])]).trim()
   }
 
